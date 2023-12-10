@@ -1,0 +1,13 @@
+[package]
+name = "led"
+version = "0.1.0"
+authors = ["Ganlv <ganlvtech@qq.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+esp-println = { version = "0.7.0", default-features = false, features = ["esp32c3", "uart"] }
+esp32c3-hal = "0.13.0"
+
+[profile.release]
+strip = true
